@@ -1,0 +1,252 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPAS - Sistema de Admissão</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+    <section class="login-container">
+        <div class="login-box">
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo">
+                <h1>IPAS</h1>
+                <p>Sistema de Seleção para<br>Novos Estudantes</p>
+            </div>
+
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+
+                <div class="login-options">
+                    <label>
+                        <input type="checkbox"> Lembrar-me
+                    </label>
+
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="dashboard">
+
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="circle">IP</div>
+                <div>
+                    <h2>IPAS</h2>
+                    <span>Sistema de Admissão</span>
+                </div>
+            </div>
+
+            <nav>
+                <a class="active" href="#">Dashboard</a>
+                <a href="#">Candidatos</a>
+                <a href="#">Cursos</a>
+                <a href="#">Exames</a>
+                <a href="#">Pagamentos</a>
+                <a href="#">Relatórios</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+
+            <div class="top-header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Ano lectivo 2025/2026 — Processo de admissão aberto</p>
+                </div>
+
+                <div class="admin">
+                    AD
+                </div>
+            </div>
+
+            <!-- CARDS -->
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total de candidatos</h3>
+                    <h2>1.247</h2>
+                    <span class="green">+84 esta semana</span>
+                </div>
+
+                <div class="card">
+                    <h3>Admitidos</h3>
+                    <h2>438</h2>
+                    <span class="green">35,1% aprovação</span>
+                </div>
+
+                <div class="card">
+                    <h3>Pagamentos confirmados</h3>
+                    <h2>312</h2>
+                    <span class="green">AOA 15.600.000</span>
+                </div>
+
+                <div class="card">
+                    <h3>Vagas disponíveis</h3>
+                    <h2>212</h2>
+                    <span class="red">562 preenchidas</span>
+                </div>
+
+            </div>
+
+            <!-- STATUS -->
+            <div class="grid-2">
+
+                <div class="box">
+                    <h3>Candidatos por curso</h3>
+
+                    <div class="course">
+                        <span>Informática</span>
+                        <div class="bar">
+                            <div style="width:80%"></div>
+                        </div>
+                        <span>312</span>
+                    </div>
+
+                    <div class="course">
+                        <span>Gestão Empresarial</span>
+                        <div class="bar">
+                            <div style="width:65%"></div>
+                        </div>
+                        <span>243</span>
+                    </div>
+
+                    <div class="course">
+                        <span>Contabilidade</span>
+                        <div class="bar">
+                            <div style="width:55%"></div>
+                        </div>
+                        <span>208</span>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <h3>Estado das candidaturas</h3>
+
+                    <div class="status">
+                        <span>Aprovadas</span>
+                        <button class="success">438 candidatos</button>
+                    </div>
+
+                    <div class="status">
+                        <span>Em análise</span>
+                        <button class="info">291 candidatos</button>
+                    </div>
+
+                    <div class="status">
+                        <span>Pendentes</span>
+                        <button class="warning">403 candidatos</button>
+                    </div>
+
+                    <div class="status">
+                        <span>Rejeitadas</span>
+                        <button class="danger">115 candidatos</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- TABELA -->
+            <div class="table-box">
+                <h3>Candidaturas recentes</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Nome</th>
+                            <th>Curso</th>
+                            <th>Data</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#IPAS-2025-1247</td>
+                            <td>Ana Beatriz Neto</td>
+                            <td>Informática</td>
+                            <td>Hoje, 09:41</td>
+                            <td><span class="tag warning">Pendente</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#IPAS-2025-1246</td>
+                            <td>Carlos Manuel Lopes</td>
+                            <td>Contabilidade</td>
+                            <td>Hoje, 09:15</td>
+                            <td><span class="tag info">Em análise</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#IPAS-2025-1245</td>
+                            <td>Filomena Teixeira</td>
+                            <td>Gestão Empresarial</td>
+                            <td>Ontem, 17:52</td>
+                            <td><span class="tag success">Aprovada</span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="form-section">
+
+        <div class="steps">
+            <div class="step active">Passo 1<br>Dados pessoais</div>
+            <div class="step blue">Passo 2<br>Dados académicos</div>
+            <div class="step">Passo 3<br>Candidatura</div>
+            <div class="step">Passo 4<br>Documentos</div>
+            <div class="step">Passo 5<br>Pagamento</div>
+        </div>
+
+        <div class="form-box">
+
+            <h2>DADOS PESSOAIS</h2>
+
+            <div class="form-grid">
+
+                <input type="text" placeholder="Nome completo">
+                <input type="date">
+
+                <input type="text" placeholder="Número do BI">
+                <input type="text" placeholder="Local de emissão">
+
+                <select>
+                    <option>Sexo</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+
+                <select>
+                    <option>Estado civil</option>
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
