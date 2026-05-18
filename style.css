@@ -327,6 +327,15 @@ table td {
     color: white;
 }
 
+.form-grid button {
+    padding: 14px;
+    background: #0b4ea2;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 /* RESPONSIVO */
 
 @media(max-width:900px) {
