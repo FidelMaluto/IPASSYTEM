@@ -352,3 +352,126 @@ table td {
     }
 
 }
+
+/* TOAST */
+
+.toast {
+    position: fixed;
+    top: 30px;
+    right: -300px;
+    background: #2563eb;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+    transition: .4s;
+    z-index: 9999;
+}
+
+.toast.show {
+    right: 30px;
+}
+
+/* LINHA SELECCIONADA */
+
+.selected-row {
+    background: #374151;
+    cursor: pointer;
+    transition: .3s;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+/* BOTÃO TEMA */
+
+.theme-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+    z-index: 999;
+}
+
+/* LIGHT MODE */
+
+.light-mode {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.light-mode .sidebar {
+    background: white;
+}
+
+.light-mode .card,
+.light-mode .box,
+.light-mode .table-box,
+.light-mode .form-box {
+    background: white;
+    color: #111827;
+}
+
+.light-mode table th,
+.light-mode table td {
+    border-color: #e5e7eb;
+}
+
+.light-mode .bar {
+    background: #d1d5db;
+}
+
+.light-mode .form-grid input,
+.light-mode .form-grid select {
+    background: #f9fafb;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+/* HOVER DOS CARDS */
+
+.card {
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+/* HOVER MENU */
+
+.sidebar nav a {
+    transition: .3s;
+}
+
+.sidebar nav a:hover {
+    padding-left: 20px;
+}
+
+/* HOVER BOTÕES */
+
+button {
+    transition: .3s;
+}
+
+button:hover {
+    opacity: .9;
+    transform: scale(1.03);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #2563eb;
+    box-shadow: 0 0 10px rgba(37, 99, 235, .3);
+}
